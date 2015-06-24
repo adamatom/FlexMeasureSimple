@@ -13,7 +13,8 @@ void setup()
 {
     // Set up stdout
     fdev_setup_stream(&serial_stdout, serial_putchar, NULL, _FDEV_SETUP_WRITE);
-    stdout = &serial_stdout;   Serial.begin(9600);
+    stdout = &serial_stdout;
+    Serial.begin(9600);
 }
 
 void loop()
